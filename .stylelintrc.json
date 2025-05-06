@@ -6,6 +6,7 @@
       "font-family-no-missing-generic-family-keyword": true,
       "unit-no-unknown": true,
       "property-no-unknown": true,
+      "property-no-vendor-prefix": false,
       "block-no-empty": true,
       "declaration-block-no-duplicate-properties": true,
       "selector-max-id": 0,
