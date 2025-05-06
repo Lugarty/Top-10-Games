@@ -11,7 +11,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Install dependencies
-        run: npm install --save-dev htmlhint stylelint-config-standard stylelint eslint@8
+        run: npm install --save-dev htmlhint stylelint-config-standard stylelint eslint
 
       - name: Fix permissions for htmlhint
         run: chmod +x ./node_modules/.bin/htmlhint
@@ -34,7 +34,7 @@ jobs:
 
       - name: Run ESLint
         id: eslint
-        run: npx eslint .
+        run: npx eslint . --ext .js,.ts
         continue-on-error: true
 
       - name: HTMLHint passed?
