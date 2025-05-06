@@ -1,4 +1,4 @@
-function toggleClasse(element) {
+window.toggleClasse = (element) => {
   const cards = document.querySelectorAll('.card');
 
   cards.forEach(card => {
