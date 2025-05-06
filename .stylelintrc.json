@@ -8,12 +8,8 @@
       "property-no-unknown": true,
       "block-no-empty": true,
       "declaration-block-no-duplicate-properties": true,
-      "declaration-colon-newline-after": "always-multi-line",
-      "max-empty-lines": 1,
       "selector-max-id": 0,
-      "selector-pseudo-element-colon-notation": "double",
-      "number-leading-zero": "always",
-      "indentation": 2
+      "selector-pseudo-element-colon-notation": "double"
     }
   }
   
