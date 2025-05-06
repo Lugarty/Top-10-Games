@@ -1,4 +1,4 @@
-window.toggleClasse = (element) => {
+globalThis.toggleClasse = (element) => {
   const cards = document.querySelectorAll('.card');
 
   cards.forEach(card => {
@@ -30,6 +30,6 @@ window.toggleClasse = (element) => {
       conteudoInterno.classList.add('visivel');
     }
   }
-}
+};
 
 
