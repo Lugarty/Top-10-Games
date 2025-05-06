@@ -34,7 +34,7 @@ jobs:
 
       - name: Run ESLint
         id: eslint
-        run: npx eslint . --ext .js,.ts
+        run: npx eslint .
         continue-on-error: true
 
       - name: HTMLHint passed?
