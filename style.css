@@ -74,7 +74,7 @@ header {
 .card-pessoa:hover {
     background-color: #f7f7f7;
     transform: translateY(-8px);
-    box-shadow: 0 12px 30px rgb(0 0 0 / 60%);
+    box-shadow: 0 12px 30px rgb(0 0 0 / 50%);
 }
 
 .card-pessoa-select {
@@ -135,4 +135,30 @@ header {
     margin-left: 20px;
     width: 100%;
     align-items: center;
+}
+
+#blob {
+    position: fixed;
+    left: 1dvb;
+    z-index: 1;
+    background-color: #f4f4f4;
+    color: #333;
+    align-items: left;
+    text-align: left;
+    align-content: left;
+    padding: 15px 25px;
+    border-radius: 16px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 10px rgb(0 0 0 / 20%);
+    border: none;
+    transition: all 0.3s ease;
+}
+
+#blob:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgb(0 0 0 / 40%);
+    transition: all 0.3s ease;
+    background-color: #f7f7f7;
 }
