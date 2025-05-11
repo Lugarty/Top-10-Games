@@ -76,7 +76,7 @@ header {
 .card-pessoa:hover {
     background-color: #f7f7f7;
     transform: scale(1.03) translateY(-8px);
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 12px 30px rgb(0 0 0 / 50%);
 }
 
 .card-pessoa-select {
@@ -114,12 +114,13 @@ header {
     animation: fadeIn 0.8s ease-in-out;
 }
 
-@keyframes fadeIn {
+@keyframes fadeIn-kebab-case {
     from {
         opacity: 0;
         transform: translateY(20px);
     }
     to {
+        
         opacity: 1;
         transform: translateY(0);
     }
@@ -132,7 +133,9 @@ header {
 }
 
 .container-fig {
-    width: 1000px;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
 }
 
 .container-fig img {
@@ -152,10 +155,12 @@ header {
 }
 
 #blob {
+    font-family: 'Share Tech', sans-serif;
+    display: flex;
     position: fixed;
     left: 1dvb;
     z-index: 1;
-    background-color: #f4f4f4;
+    background-color: rgb(244 244 244);
     color: #333;
     padding: 15px 25px;
     border-radius: 16px;
@@ -174,24 +179,10 @@ header {
     background-color: #f7f7f7;
 }
 
-@media (max-width: 768px) {
-    .card-pessoa,
-    .card-pessoa-select {
-        width: 90%;
-        padding: 15px;
-    }
+.github-icon {
+    transition: color 0.3s ease;
+}
 
-    .parte-fig-text {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .container-fig img {
-        max-width: 100%;
-    }
-
-    .container-info {
-        margin-left: 0;
-        margin-top: 20px;
-    }
+#blob:hover .github-icon {
+    color: #ffd700;
 }
